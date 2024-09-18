@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container_footer{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.footer_row{
+    margin-inline: 50px;
+
+    li{
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        list-style: none;
+        margin-bottom: 15px;
+    }
+}
