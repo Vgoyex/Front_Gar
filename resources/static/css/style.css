@@ -5,46 +5,74 @@
     padding: 0px;
 }
 
+a{
+    text-decoration:none;
+}
+
 .container_login {
-    background-color: rgb(147, 179, 161);
-    height: 82vh;
+    background-color: rgb(240, 228, 228);
+    height: 65vh;
     margin-bottom: 3px;
     display: flex;
     justify-content: flex-end; /* Alinha o formulário à direita */
     padding-right: 20px; /* Espaçamento para não ficar colado na borda */
+    a{
+        text-decoration:none;
+        text-align:center;
+    }
 }
 
 .container_form {
-    height: 480px;
+    background-color: white;
+    height: 520px;
     width: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     box-shadow: 1px 3px 3px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column; /* Permite o alinhamento vertical dos elementos */
     justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
+    margin-right: 200px;
+    margin-top:30px;
     padding: 20px; /* Espaçamento interno para afastar o conteúdo da borda */
+    button{
+        margin-top:10px;
+        width: 450px;
+    }
 }
 
-.container_form ul {
-    display: flex;
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    flex-direction: column; /* Organiza os itens verticalmente */
-    width: 100%; /* Faz os itens ocuparem toda a largura do formulário */
-}
-
-.container_form li {
-    padding: 10px;
-    width: 100%; /* Garante que os itens da lista ocupem toda a largura disponível */
+.extra_itens{
+  text-align: center;
+  display:flex;
+  justify-content: space-between;
+  margin:10px;
 }
 
 .container_form input {
-    border-radius: 5px;
-    width: 100%; /* Faz o input ocupar toda a largura do container */
+    border-radius: 14px;
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px; /* Faz o input ocupar toda a largura do container */
+    text-align: left; /* Alinha o texto dentro do input à esquerda */
+    padding: 10px; /* Adiciona espaçamento interno */
+    box-sizing: border-box; /* Garante que padding seja incluído na largura total */;
+    
 }
 
+.social_login{
+    margin-top:10px;
+    align-items: center;
+    text-align: center;
+    ul{
+        list-style: none;
+    }
+    li{
+        height: 30px;
+        box-shadow: 1px 1px 1px rgb(92, 87, 87);
+        border-radius:7px;
+    }
+
+}
 
 .container_feed{
     display: flex;
